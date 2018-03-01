@@ -1,3 +1,11 @@
-<p>
-  stars works!
-</p>
+<div class="ratings">
+  <p>
+    <i *ngFor="let solid of stars"
+      class="fa"
+      [class.fa-star]="solid"
+      [class.fa-star-o]="!solid">
+    </i>
+
+    <span>{{rating}} stars</span>
+  </p>
+</div>
