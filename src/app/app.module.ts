@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
+import { AuctionMaterialModule } from './auction-material/auction-material.module'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -29,7 +31,9 @@ import { ProductService } from './services/product.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    AuctionMaterialModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
